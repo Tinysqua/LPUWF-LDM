@@ -1,0 +1,52 @@
+# base configuration
+train_bc: 2
+eval_bc: 8
+num_epochs: 200
+data_path: ['/mntcephfs/lab_data/wangcm/fzj/advanced_VT/dataset/data_slolaffa', 
+            '/mntcephfs/lab_data/wangcm/fzj/advanced_VT/dataset/early_koufu_la']
+img_sz: [512, 512]
+val_length: 900
+cond_add_noise: False
+stable_path: '/mntcephfs/lab_data/wangcm/fzj/pretrained_model/stable_diffusion'
+
+
+# train process configuration
+val_inter: 5
+save_inter: 200
+
+
+target_path: 'weights/exp_11_22/model_save'
+
+# model configuration
+unet_resume: '/mntcephfs/lab_data/wangcm/fzj/pretrained_model/stable_diffusion/unet'
+sample_size: 64
+in_channels: 8
+out_channels: 8
+layers_per_block: 2
+block_out_channels: [320, 640, 1280, 1280]
+down_block_types: [
+    "CrossAttnDownBlock2D",
+    "CrossAttnDownBlock2D",
+    "CrossAttnDownBlock2D",
+    "DownBlock2D"
+  ]
+#   ["DownBlock2D",  "DownBlock2D", "DownBlock2D",
+# "DownBlock2D", "AttnDownBlock2D",  "DownBlock2D"]
+up_block_types: [
+    "UpBlock2D",
+    "CrossAttnUpBlock2D",
+    "CrossAttnUpBlock2D",
+    "CrossAttnUpBlock2D"
+  ]
+
+cross_attention_dim: 768
+
+num_train_timesteps: 1000
+lr: 0.0001
+
+# accelerate config
+split_batches: False
+mixed_precision: 'fp16'
+log_with: 'tensorboard'
+project_dir: 'weights/exp_3_1'
+only_save_part: 1
