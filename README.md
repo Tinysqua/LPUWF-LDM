@@ -1,4 +1,8 @@
 # **LPUWF-LDM**
+
+## Overall structure of the LPUWF-LDM:
+![model](img/Model.png)
+
 This code is the pytorch implementation of LPUWF-LDM
 
 ## Pre-requisties
