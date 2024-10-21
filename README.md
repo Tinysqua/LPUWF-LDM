@@ -4,11 +4,15 @@
 ![model](imgs/Model.png)
 
 ## Gated Convolutional Encoder:
-
 ![Strategy](imgs/VAE.png)
 
-This code is the pytorch implementation of LPUWF-LDM
+## Comparison of generating late-phase UWF-FA between different generation networks:
+![renderings](imgs/compare.png)
 
+## Comparison of generative metrics for various generation networks.:
+![renderings](imgs/table.png)
+
+This code is the pytorch implementation of LPUWF-LDM
 ## Pre-requisties
 - Linux
 - numpy==1.26.3
