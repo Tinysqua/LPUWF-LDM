@@ -1,7 +1,11 @@
 # **LPUWF-LDM**
 
 ## Overall structure of the LPUWF-LDM:
-![model](img/Model.png)
+![model](imgs/Model.png)
+
+## Gated Convolutional Encoder:
+
+![Strategy](imgs/VAE.png)
 
 This code is the pytorch implementation of LPUWF-LDM
 
