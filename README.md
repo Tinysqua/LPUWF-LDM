@@ -4,13 +4,13 @@ Overall structure of the LPUWF-LDM:
 ![model](imgs/Model.png)
 
 Gated Convolutional Encoder:
-![Strategy](imgs/VAE.png)
+![VAE](imgs/VAE.png)
 
 Comparison of generating late-phase UWF-FA between different generation networks:
-![renderings](imgs/compare.png)
+![COMPARE](imgs/compare.png)
 
 Comparison of generative metrics for various generation networks.:
-![renderings](imgs/table.png)
+![table](imgs/table.png)
 
 ## Pre-requisties
 This code is the pytorch implementation of LPUWF-LDM
